@@ -1,0 +1,19 @@
+query Input {
+  cart {
+    lines {
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          product {
+            isMembersProduct: hasAnyTag(tags: [ "member "])
+          }
+        }
+      }
+    }
+    buyerIdentity {
+      customer {
+        isMember: hasAnyTag(tags: [ "member" ])
+      }
+    }
+  }
+}

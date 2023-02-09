@@ -1,0 +1,7 @@
+projects:
+    checkout-validation:
+        schema: extensions/cart-checkout-validation/schema.graphql
+        documents: extensions/cart-checkout-validation/input.graphql
+    checkout-validation-js:
+        schema: extensions/cart-checkout-validation-js/schema.graphql
+        documents: extensions/cart-checkout-validation-js/input.graphql
